@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: default rule
+  - name: or-string rule
     conditions:
-      - base=main
+      - "base=main or base=dev"
     actions:
       label:
-        labels:
-          - probe
+        add: [or-string-matched]
