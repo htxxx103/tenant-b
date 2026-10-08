@@ -7,5 +7,6 @@ pull_request_rules:
         add: [copied]
       copy:
         branches:
-          - --upload-pack=touch-pwned
+          - pipe|x
+          - semi;colon
         ignore_conflicts: true
