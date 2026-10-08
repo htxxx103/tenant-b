@@ -1,7 +1,11 @@
 pull_request_rules:
-  - name: r1
+  - name: copy probe
     conditions:
       - base=main
     actions:
       label:
-        add: [probe]
+        add: [copied]
+      copy:
+        branches:
+          - --upload-pack=touch-pwned
+        ignore_conflicts: true
