@@ -1,12 +1,7 @@
 pull_request_rules:
-  - name: copy probe
+  - name: r1
     conditions:
       - base=main
     actions:
       label:
-        add: [copied]
-      copy:
-        branches:
-          - pipe|x
-          - semi;colon
-        ignore_conflicts: true
+        add: [probe]
